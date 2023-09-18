@@ -1,0 +1,102 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+#tekst {
+    text-align: justify;
+}
+
+#gallery > div {
+    margin-bottom: 80px;
+    box-shadow: 1px 2px 2px 1px gray;
+    border-radius: 25px;
+}
+.galerija {
+    width: 70%;
+    margin: 0 auto;
+}
+.slika {
+    min-height: 150px;
+    background-image: url(gallery.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: lightblue;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+ 
+}
+.tekst_slike p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color:grey;
+    line-height: 40px;
+    
+}
+@media screen and (max-width: 319px) {
+
+    h1 {
+        font-size: 22px;
+    }
+    .tekst_slike p {
+        font-size: 18px;
+    }
+    #tekst {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+
+    h1 {
+        font-size: 35px;
+    }
+    .tekst_slike p {
+        font-size: 28px;
+    }
+    #tekst {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        text-align: start;
+        margin-left: 0;
+    }
+    .galerija {
+        width: 90%;
+    }
+
+    #gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    #gallery > div {
+        width: 30%;
+    }
+    
+    .tekst_slike p {
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .galerija {
+        width: 98%;
+    }
+    #gallery > div {
+        width: 17%;
+    }
+}
